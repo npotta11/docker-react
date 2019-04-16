@@ -8,7 +8,7 @@ script:
   - docker run npotta/docker-react npm run test -- --coverage
 
 deploy:
- provider: eleasticbeanstalk
+ provider: elasticbeanstalk
  region: "us-east-1"
  app: "docker-react"
  environment: "DockerReact-env"
